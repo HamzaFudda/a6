@@ -85,6 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   getTasks() async {
+    
     isLoading = true;
     setState(() {});
     await context.read<todoList>().getTasks();
